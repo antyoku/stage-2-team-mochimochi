@@ -1,1 +1,15 @@
 //hero
+.hero {
+  text-align: center;
+  background: #000000;
+  height: 180px;
+  @media screen and (min-width: 600px) {
+    height:600px;
+  }
+  &__panther {
+    height: 180px;
+    @media screen and (min-width: 600px) {
+      height:600px;
+    }
+  }
+}
