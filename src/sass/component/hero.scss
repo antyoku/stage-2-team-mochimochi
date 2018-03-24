@@ -2,14 +2,11 @@
 .hero {
   text-align: center;
   background: #000000;
-  height: 180px;
-  @media screen and (min-width: 600px) {
-    height:600px;
-  }
+  width:100%;
+  min-width:320px;
   &__panther {
-    height: 180px;
-    @media screen and (min-width: 600px) {
-      height:600px;
-    }
+    width:78.0871156662%;
+    max-width: 1066.67px;
+    min-width: 320px;
   }
 }
