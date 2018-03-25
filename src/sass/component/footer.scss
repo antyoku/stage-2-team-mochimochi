@@ -1,15 +1,12 @@
 //footer
 .copyright {
   text-align: center;
-  background-color: #000000;
-  width: 100%;
-  padding: 0 0 29px 0;
-  font-family: Noto Sans JP, sans-serif;
+  padding: 0 0 29px;
   font-weight: 250;
   line-height: 18px;
   color: #707070;
   font-size: 12px;
   @media screen and (min-width: 600px) {
-    padding:0 0 31px 0;
+    padding:0 0 31px;
   }
 }
