@@ -1,3 +1,17 @@
-<!-- where -->
+<%# what ※コメントアウト %>
 
-<% include ./heading %>
+<%# 
+  この読み込みは暫定的です。必要に応じて、任意の値を入力してください。（詳細はheading.ejs参照）
+  ※このコメントは削除してかまいません。
+%>
+<%# -----heading読み込み----- %>
+<%-
+  include('heading',{
+    english:'whare-eng-text',
+    japanese:'where-jap-text',
+    size:'small',
+    id:'where-input-id',
+    maxlength:''
+  });
+%>
+<%# -----heading読み込み----- %>
