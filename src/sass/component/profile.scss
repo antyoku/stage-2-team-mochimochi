@@ -5,6 +5,7 @@
     padding-bottom: 155px;
   }
   &__input {
+    position: relative;
     height: 60px;
     width: 270px;
     margin: 0 auto;
@@ -20,10 +21,19 @@
     color: #666;
     float: left;
     font-size: 24px;
+    font-family: inherit;
+    font-weight: inherit;
     padding: 0;
     text-align: center;
     height: 60px;
     width: 90px;
+    &-label {
+      position: absolute;
+      z-index: 1;
+    }
+    &-select {
+      z-index: 2;
+    }
   }
   &__birth-year {
     border-radius: 3px 0 0 3px;
@@ -32,51 +42,81 @@
     border-radius: 0 3px 3px 0;
   }
   &__sex {
-    background-color: #000;
-    border-radius: 50%;
-    border: solid 4px #111;
-    color: #525252;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 17px;
-    text-align:center;
-    line-height: 39px;
-    vertical-align: middle;
-    width: 39px;
-    height: 39px;
-  }
-  &__sex-male {
-    margin-right: 30px;
-  }
-  &__sex-female {
-    margin-left: 30px;
-  }
-  &__bar {
-    border-radius: 0;
-    border: solid 2.5px #111;
-    border-style: none solid;
-    cursor: default;
-    width: 0;
-    height: 140px;
-    margin-top: 0;
-    @media screen and (min-width: 600px) {
-      height: 155px;
-    }
-    &::after {
+    &-style {
+      float: left;
       background-color: #000;
-      content: "";
-      display: block;
-      width: 5px;
-      position: relative;
-      transform: rotate(90deg);
-      z-index: -1;
+      border-radius: 50%;
+      border: solid 4px #111;
+      color: #525252;
+      cursor: pointer;  
+      font-size: 17px;
+      text-align:center;
+      line-height: 32px;
+      vertical-align: middle;
+      user-select: none;
+      width: 35px;
+      height: 35px;
+    }
+    &-male {
+      position: absolute;
+      z-index: 1;
+      top: 127px;
+      left: 60px;
+      @media screen and (min-width: 600px) {
+        top: 195px;
+      }
+    }
+    &-female {
+      position: absolute;
+      z-index: 1;
+      top: 127px;
+      left: 165px;
+      @media screen and (min-width: 600px) {
+        top: 195px;
+      }
+    }
+    &-bar {
+      margin-left: 132.5px;
+      border-radius: 0;
+      border: solid 2.5px #111;
+      border-style: none solid;
+      cursor: default;
+      width: 0;
       height: 140px;
       @media screen and (min-width: 600px) {
         height: 155px;
       }
+      &::after {
+        background-color: #111;
+        content: "";
+        display: block;
+        transform: rotate(90deg);
+        height: 140px;
+        width: 5px;
+        @media screen and (min-width: 600px) {
+          height: 140px;
+          margin-top: 7.5px;
+        }
+      }
     }
   }
-  &__radio-none {
+  &__sex-button {
     display: none;
+  }
+  .profile__input input[type="radio"]:checked {
+    & + .profile__sex-style {
+      background-color: #111;
+      border: solid 5px #111;
+      color: #DDD;
+      margin-top: -10px;
+      width: 55px;
+      height: 55px;
+      line-height: 50px;
+      font-size: 24px;
+      transition: .2s;
+    }
+    & + .profile__sex-style--male {
+      margin-left: -20px;
+    }
   }
 }
