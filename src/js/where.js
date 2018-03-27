@@ -186,7 +186,7 @@ var styleOptions = [{
 ]
 
 function initMap() {
-  var map = new google.maps.Map(document.getElementById("where__map"), {
+  var map = new google.maps.Map(document.getElementById("map-area"), {
     center: new google.maps.LatLng(35.65858, 139.745433),
     zoom: 4,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -204,7 +204,7 @@ var getMap = (function () {
       'address': address
     }, function (results, status) {
       if (status == google.maps.GeocoderStatus.OK) {
-        var map = new google.maps.Map(document.getElementById("where__map"), {
+        var map = new google.maps.Map(document.getElementById("map-area"), {
           zoom: 8,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           disableDefaultUI: true
