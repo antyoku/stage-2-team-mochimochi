@@ -188,7 +188,7 @@ var styleOptions = [{
 function initMap() {
   var map = new google.maps.Map(document.getElementById("where__map"), {
     center: new google.maps.LatLng(35.65858, 139.745433),
-    zoom: 11,
+    zoom: 4,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     disableDefaultUI: true
   });
@@ -221,7 +221,7 @@ var getMap = (function () {
 
   return {
     getAddress: function () {
-      $('#where-input-id').keyup(function () {
+      $('#where-input-id').change(function () {
         var address = document.getElementById("where-input-id").value;
         codeAddress(address);
       });

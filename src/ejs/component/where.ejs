@@ -1,15 +1,59 @@
 <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBom4xYfD6TpMLUJM9XuNeBto4gpGDeTrw"></script>
 <div class="where">
   <div id="where__map"></div>
-<%# -----heading読み込み----- %>
-<%-
-  include('heading',{
-    english:'Where are you inhabiting?',
-    japanese:'どこに生息している？',
-    size:'small',
-    id:'where-input-id',
-    maxlength:''
-  });
-%>
-<%# -----heading読み込み----- %>
+  <div class="heading">
+    <div class="heading__english">Where are you inhabiting?</div>
+    <div class="heading__japanese">どこに生息している？</div>
+    <select class="heading__input heading__input--small" id="where-input-id">
+      <option class="heading__input-list"></option>
+      <option class="heading__input-list">Hokkaido</option>
+      <option class="heading__input-list">Aomori</option>
+      <option class="heading__input-list">Iwate</option>
+      <option class="heading__input-list">Miyagi</option>
+      <option class="heading__input-list">Akita</option>
+      <option class="heading__input-list">Yamagata</option>
+      <option class="heading__input-list">Fukushima</option>
+      <option class="heading__input-list">Ibaraki</option>
+      <option class="heading__input-list">Tochigi</option>
+      <option class="heading__input-list">Gunma</option>
+      <option class="heading__input-list">Saitama</option>
+      <option class="heading__input-list">Chiba</option>
+      <option class="heading__input-list">Tokyo</option>
+      <option class="heading__input-list">Kanagawa</option>
+      <option class="heading__input-list">Niigata</option>
+      <option class="heading__input-list">Toyama</option>
+      <option class="heading__input-list">Ishikawa</option>
+      <option class="heading__input-list">Fukui</option>
+      <option class="heading__input-list">Yamanashi</option>
+      <option class="heading__input-list">Nagano</option>
+      <option class="heading__input-list">Gifu</option>
+      <option class="heading__input-list">Shizuoka</option>
+      <option class="heading__input-list">Aichi</option>
+      <option class="heading__input-list">Mie</option>
+      <option class="heading__input-list">Shiga</option>
+      <option class="heading__input-list">Kyoto</option>
+      <option class="heading__input-list">Osaka</option>
+      <option class="heading__input-list">Hyogo</option>
+      <option class="heading__input-list">Nara</option>
+      <option class="heading__input-list">Wakayama</option>
+      <option class="heading__input-list">Tottori</option>
+      <option class="heading__input-list">Shimane</option>
+      <option class="heading__input-list">Okayama</option>
+      <option class="heading__input-list">Hiroshima</option>
+      <option class="heading__input-list">Yamaguchi</option>
+      <option class="heading__input-list">Tokushima</option>
+      <option class="heading__input-list">Kagawa</option>
+      <option class="heading__input-list">Ehime</option>
+      <option class="heading__input-list">Kochi</option>
+      <option class="heading__input-list">Fukuoka</option>
+      <option class="heading__input-list">Saga</option>
+      <option class="heading__input-list">Nagasaki</option>
+      <option class="heading__input-list">Kumamoto</option>
+      <option class="heading__input-list">Oita</option>
+      <option class="heading__input-list">Miyazaki</option>
+      <option class="heading__input-list">Kagoshima</option>
+      <option class="heading__input-list">Okinawa</option>
+    </select>
+    </select>
+  </div>
 </div>
