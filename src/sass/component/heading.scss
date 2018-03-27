@@ -14,21 +14,22 @@
       margin-bottom: 80px;
     }
   }
-  &__input {
-    display: block;
-    width:100%;
-    box-sizing: border-box;
-    padding: 16px;
-    margin: 0 auto;
-    @media screen and (min-width: 600px) {
-      padding: 30px;
-    }
-    &--big {
-      max-width: 720px;
-    }
-    &--small {
-      max-width: 495px;
-    }
+}
+
+.input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+  margin: 0 auto;
+  @media screen and (min-width: 600px) {
+    padding: 30px;
+  }
+  &--big {
+    max-width: 720px;
+  }
+  &--small {
+    max-width: 495px;
   }
 }
 
@@ -55,15 +56,16 @@
       line-height: 1.5;
     }
   }
-  &__input {
-    background-color: rgba(17, 17, 17, 1);
-    border: none;
-    color: rgba(112, 112, 112, 1);
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    @media screen and (min-width: 600px) {
-      font-size: 30px;
-    }
+}
+
+.input {
+  background-color: rgba(17, 17, 17, 1);
+  border: none;
+  color: rgba(112, 112, 112, 1);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  @media screen and (min-width: 600px) {
+    font-size: 30px;
   }
 }

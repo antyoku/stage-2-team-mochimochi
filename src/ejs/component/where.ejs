@@ -1,17 +1,57 @@
-<%# what ※コメントアウト %>
-
-<%# 
-  この読み込みは暫定的です。必要に応じて、任意の値を入力してください。（詳細はheading.ejs参照）
-  ※このコメントは削除してかまいません。
-%>
-<%# -----heading読み込み----- %>
-<%-
-  include('heading',{
-    english:'whare-eng-text',
-    japanese:'where-jap-text',
-    size:'small',
-    id:'where-input-id',
-    maxlength:''
-  });
-%>
-<%# -----heading読み込み----- %>
+<div class="where">
+  <div class="where__map" id="map-area"></div>
+  <div class="heading heading--where">
+    <div class="heading__english">Where are you inhabiting?</div>
+    <div class="heading__japanese">どこに生息している？</div>
+    <select class="input input--small" id="where-input-id">
+      <option></option>
+      <option>Hokkaido</option>
+      <option>Aomori</option>
+      <option>Iwate</option>
+      <option>Miyagi</option>
+      <option>Akita</option>
+      <option>Yamagata</option>
+      <option>Fukushima</option>
+      <option>Ibaraki</option>
+      <option>Tochigi</option>
+      <option>Gunma</option>
+      <option>Saitama</option>
+      <option>Chiba</option>
+      <option>Tokyo</option>
+      <option>Kanagawa</option>
+      <option>Niigata</option>
+      <option>Toyama</option>
+      <option>Ishikawa</option>
+      <option>Fukui</option>
+      <option>Yamanashi</option>
+      <option>Nagano</option>
+      <option>Gifu</option>
+      <option>Shizuoka</option>
+      <option>Aichi</option>
+      <option>Mie</option>
+      <option>Shiga</option>
+      <option>Kyoto</option>
+      <option>Osaka</option>
+      <option>Hyogo</option>
+      <option>Nara</option>
+      <option>Wakayama</option>
+      <option>Tottori</option>
+      <option>Shimane</option>
+      <option>Okayama</option>
+      <option>Hiroshima</option>
+      <option>Yamaguchi</option>
+      <option>Tokushima</option>
+      <option>Kagawa</option>
+      <option>Ehime</option>
+      <option>Kochi</option>
+      <option>Fukuoka</option>
+      <option>Saga</option>
+      <option>Nagasaki</option>
+      <option>Kumamoto</option>
+      <option>Oita</option>
+      <option>Miyazaki</option>
+      <option>Kagoshima</option>
+      <option>Okinawa</option>
+    </select>
+  </div>
+</div>
