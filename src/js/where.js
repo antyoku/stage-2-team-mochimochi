@@ -189,7 +189,8 @@ function initMap() {
   var map = new google.maps.Map(document.getElementById("where__map"), {
     center: new google.maps.LatLng(35.65858, 139.745433),
     zoom: 11,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    disableDefaultUI: true
   });
   map.setOptions({
     styles: styleOptions
@@ -205,7 +206,8 @@ var getMap = (function () {
       if (status == google.maps.GeocoderStatus.OK) {
         var map = new google.maps.Map(document.getElementById("where__map"), {
           zoom: 8,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          disableDefaultUI: true
         });
         map.setCenter(results[0].geometry.location);
         map.setOptions({
