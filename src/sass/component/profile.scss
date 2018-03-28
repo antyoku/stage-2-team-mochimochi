@@ -27,13 +27,6 @@
     text-align: center;
     height: 60px;
     width: 90px;
-    &-label {
-      position: absolute;
-      z-index: 1;
-    }
-    &-select {
-      z-index: 2;
-    }
   }
   &__birth-year {
     border-radius: 3px 0 0 3px;
@@ -42,21 +35,19 @@
     border-radius: 0 3px 3px 0;
   }
   &__sex {
-    &-style {
-      float: left;
-      background-color: #000;
-      border-radius: 50%;
-      border: solid 4px #111;
-      color: #525252;
-      cursor: pointer;  
-      font-size: 17px;
-      text-align:center;
-      line-height: 32px;
-      vertical-align: middle;
-      user-select: none;
-      width: 35px;
-      height: 35px;
-    }
+    float: left;
+    background-color: #000;
+    border-radius: 50%;
+    border: solid 4px #111;
+    color: #525252;
+    cursor: pointer;  
+    font-size: 17px;
+    text-align:center;
+    line-height: 32px;
+    vertical-align: middle;
+    user-select: none;
+    width: 35px;
+    height: 35px;
     &-male {
       position: absolute;
       z-index: 1;
@@ -104,7 +95,7 @@
     display: none;
   }
   .profile__input input[type="radio"]:checked {
-    & + .profile__sex-style {
+    & + .profile__sex {
       background-color: #111;
       border: solid 5px #111;
       color: #DDD;
@@ -115,7 +106,7 @@
       font-size: 24px;
       transition: .2s;
     }
-    & + .profile__sex-style--male {
+    & + .profile__sex--male {
       margin-left: -20px;
     }
   }
