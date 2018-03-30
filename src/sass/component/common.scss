@@ -3,3 +3,40 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 100;
 }
+
+.hero{
+  margin-bottom: 20px;
+  @media screen and (min-width: 600px) {
+    margin-bottom: 80px;
+  }
+}
+.profile{
+  margin-bottom: 41px;
+  @media screen and (min-width: 600px) {
+    margin-bottom: 80px;
+  }
+}
+.what{
+  margin-bottom: 53px;
+  @media screen and (min-width: 600px) {
+    margin-bottom: 94px;
+  }
+}
+.favorite{
+  margin-bottom: 30px;
+  @media screen and (min-width: 600px) {
+    margin-bottom: 80px;
+  }
+}
+.create-btn{
+  margin-bottom: 80px;
+  @media screen and (min-width: 600px) {
+    margin-bottom: 160px;
+  }
+}
+.copyright{
+  margin-bottom: 29px;
+  @media screen and (min-width: 600px) {
+    margin-bottom: 31px;
+  }
+}
