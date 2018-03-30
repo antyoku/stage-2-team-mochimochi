@@ -2,7 +2,16 @@
 
 .favorite {
   position: relative;
+  text-align: center;
   &__thumbnail {
+    display:none;
+    width: 60%;
+    filter:brightness(20%);
+    @media screen and (min-width: 600px) {
+      width:50%;
+    }
+  }
+  &__thumbnail-area {
     width: 100%;
     height: 202.9px;
     @media screen and (min-width: 600px) {
