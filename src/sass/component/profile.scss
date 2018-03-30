@@ -28,10 +28,10 @@
     height: 60px;
     width: 90px;
   }
-  &__birth-year {
+  &__birth—year {
     border-radius: 3px 0 0 3px;
   }
-  &__birth-day {
+  &__birth—day {
     border-radius: 0 3px 3px 0;
   }
   &__sex {
@@ -48,7 +48,7 @@
     user-select: none;
     width: 35px;
     height: 35px;
-    &-male {
+    &—male {
       position: absolute;
       z-index: 1;
       top: 127px;
@@ -57,7 +57,7 @@
         top: 195px;
       }
     }
-    &-female {
+    &—female {
       position: absolute;
       z-index: 1;
       top: 127px;
@@ -66,7 +66,7 @@
         top: 195px;
       }
     }
-    &-bar {
+    &—bar {
       margin-left: 132.5px;
       border-radius: 0;
       border: solid 2.5px #111;
@@ -91,7 +91,7 @@
       }
     }
   }
-  &__sex-button {
+  &__sex—button {
     display: none;
   }
   .profile__input input[type="radio"]:checked {
