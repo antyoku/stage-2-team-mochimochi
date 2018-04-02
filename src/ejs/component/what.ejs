@@ -1,17 +1,13 @@
 <%# what ※コメントアウト %>
-
-<%# 
-  この読み込みは暫定的です。必要に応じて、任意の値を入力してください。（詳細はheading.ejs参照）
-  ※このコメントは削除してかまいません。
-%>
-<%# -----heading読み込み----- %>
-<%-
-  include('heading',{
-    english:'what-eng-text',
-    japanese:'what-jap-text',
-    size:'big',
-    id:'what-input-id',
-    maxlength:'10'
-  });
-%>
-<%# -----heading読み込み----- %>
+<div class="what">
+  <div class="heading heading--what">
+    <div class="heading__english">What are you?</div>
+    <div class="heading__japanese">あなたは何者ですか？</div>
+    <input class="input input--big" id="js-input-what" type="text" maxlength="10">
+  </div>
+  <div class="what__input-container">
+    <div class="what__input-length">
+        <span id="js-input-what-length">0</span>/10
+    </div>
+  </div>
+</div>
