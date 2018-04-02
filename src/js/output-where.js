@@ -1,5 +1,9 @@
 'use strict'
 
+$('.create-btn__switch').on('click',function(){
+  outputWhere('hokkaido');
+});
+
 function outputWhere(outputAddress) {
   var geocoder = new google.maps.Geocoder();
   geocoder.geocode({
@@ -36,6 +40,7 @@ function outputWhere(outputAddress) {
       map.setOptions({
         styles: styleOptions
       });
+      $('.heading--where').hide();
     }
   });
 }
