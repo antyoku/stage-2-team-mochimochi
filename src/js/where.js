@@ -190,7 +190,9 @@ function initMap() {
     center: new google.maps.LatLng(35.65858, 139.745433),
     zoom: 4,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
-    disableDefaultUI: true
+    disableDefaultUI: true,
+    scrollwheel: false,
+    draggable: false
   });
   map.setOptions({
     styles: styleOptions
@@ -207,7 +209,9 @@ var getMap = (function () {
         var map = new google.maps.Map(document.getElementById('map-area'), {
           zoom: 8,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
-          disableDefaultUI: true
+          disableDefaultUI: true,
+          scrollwheel: false,
+          draggable: false
         });
         map.setCenter(results[0].geometry.location);
         map.setOptions({
