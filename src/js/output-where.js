@@ -1,9 +1,5 @@
 'use strict'
 
-$('.create-btn__switch').on('click',function(){
-  outputWhere('hokkaido');
-});
-
 function outputWhere(outputAddress) {
   var geocoder = new google.maps.Geocoder();
   geocoder.geocode({
@@ -13,7 +9,9 @@ function outputWhere(outputAddress) {
       var map = new google.maps.Map(document.getElementById('map-area'), {
         zoom: 8,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
-        disableDefaultUI: true
+        disableDefaultUI: true,
+        scrollwheel: false,
+        draggable: false
       });
       map.setCenter(results[0].geometry.location);
       var markerWidth;
