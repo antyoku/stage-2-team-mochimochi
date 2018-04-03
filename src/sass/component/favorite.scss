@@ -21,14 +21,28 @@
     margin: auto;
     filter: brightness(20%);
   }
-  .heading {
+  &__movie {
     position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    height:auto;
+    max-width:900px;
+    max-height:506.25px;
+    top: 0;
     right: 0;
     left: 0;
-    top: 29.9px;
     bottom: 0;
-    @media screen and (min-width: 600px) {
-      top:102px;
-    }
+    margin: auto;
+  }
+}
+
+.heading--favorite {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 29.9px;
+  bottom: 0;
+  @media screen and (min-width: 600px) {
+    top:102px;
   }
 }

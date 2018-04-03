@@ -1,16 +1,9 @@
 <div class="favorite">
   <div class="favorite__thumbnail-area" id="output"></div>
 
-  <%# -----heading読み込み----- %>
-    <%-
-  include('heading',{
-    english:'What is your favorite movie?',
-    japanese:'好きな動画は？',
-    size:'small',
-    id:'fav-input-id',
-    maxlength:''
-  });
-%>
-      <%# -----heading読み込み----- %>
-
+  <div class="heading heading--favorite">
+    <div class="heading__english">What is your favorite movie?</div>
+    <div class="heading__japanese">好きな動画は？</div>
+    <input class="input input--small" id="fav-input-id" type="text">
+  </div>
 </div>

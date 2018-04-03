@@ -11,10 +11,12 @@ $('#fav-input-id').change(function () {
     var idMovie = urlFav.split(/.*\.be\/([\d\w\-]+).*/);
     var output = document.getElementById('output');
     output.innerHTML = "<img class=\"favorite__thumbnail-img\" src='https://img.youtube.com/vi/" + idMovie[1] + "/default.jpg' alt=\"\">";
+    $('.favorite__thumbnail-img').fadeIn();
   } else if (urlFav.match(/embed/)) {
     var idMovie = urlFav.split(/.*\embed\/([\d\w\-]+).*/);
     var output = document.getElementById('output');
     output.innerHTML = "<img class=\"favorite__thumbnail-img\" src='https://img.youtube.com/vi/" + idMovie[1] + "/default.jpg' alt=\"\">";
+    $('.favorite__thumbnail-img').fadeIn();
   } else {
     $('.favorite__thumbnail-img').remove();
   }
