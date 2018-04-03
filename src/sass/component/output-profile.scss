@@ -15,8 +15,10 @@
       color: #707070;
       font-size: 20px;
       text-shadow: none;
+      margin-right: -30px;
       @media screen and (min-width: 600px) {
         font-size: 40px;
+        margin-right: -60px;
       }
     }
     &--female::after {
@@ -24,8 +26,10 @@
       color: #707070;
       font-size: 20px;
       text-shadow: none;
+      margin-right: -30px;
       @media screen and (min-width: 600px) {
         font-size: 40px;
+        margin-right: -60px;
       }
     }
   }
