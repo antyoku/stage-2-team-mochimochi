@@ -6,7 +6,8 @@
     display: inline-block;
     width: 28px;
     height: 28px;
-    background-image: url("../image/twitter-icon.png");
+    border-radius: 50%;
+    background-image: url("../image/twitter-icon.svg");
     background-size: contain;
     @media screen and (min-width: 600px) {
       width: 40px;
