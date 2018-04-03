@@ -1,1 +1,97 @@
-//output-profile
+.output-profile {
+  &__age-box {
+    text-align: center;
+  }
+  &__age   {
+    text-align: center;
+    color: #DDD;
+    font-size: 60px;
+    text-shadow: 0 0 16px #FFF;
+    @media screen and (min-width: 600px) {
+      font-size: 140px;
+    }
+    &--male::after {
+      content: "/ 80";
+      color: #707070;
+      font-size: 20px;
+      text-shadow: none;
+      @media screen and (min-width: 600px) {
+        font-size: 40px;
+      }
+    }
+    &--female::after {
+      content: "/ 87";
+      color: #707070;
+      font-size: 20px;
+      text-shadow: none;
+      @media screen and (min-width: 600px) {
+        font-size: 40px;
+      }
+    }
+  }
+  &__light-box {
+    font-size: 0;
+    margin:0 auto;
+    padding-top: 30px;
+    width: 280px;
+    @media screen and (min-width: 600px) {
+      padding-top: 66px;
+      width: 920px;
+    }
+    & div:nth-child(8n+1) {
+      background-color: red;
+      margin-left: 0;
+      @media screen and (min-width: 600px) {
+        margin-left: 20px;
+      }
+    }
+    & div:nth-child(10n+1) {
+      background-color: green;
+      margin-left: 4;
+      @media screen and (min-width: 600px) {
+        margin-left: 0px;
+      }
+    }
+    & div:nth-child(8n+8) {
+      background-color: blue;
+      margin-right: 0;
+      @media screen and (min-width: 600px) {
+        margin-right: 20px;
+      }
+    }
+    & div:nth-child(10n+10) {
+      background-color: yellow;
+      margin-right: 4;
+      @media screen and (min-width: 600px) {
+        margin-right: 0px;
+      }
+    }
+  }
+  &__light {
+    background-color: #242424;
+    border: solid 4px #4B474B;
+    border-radius: 50%;
+    display:inline-block;
+    margin: 4px;
+    height: 20px;
+    width: 20px;
+    @media screen and (min-width: 600px) {
+      border: solid 11px #4B474B;
+      margin: 10px 20px;
+      height: 34px;
+      width: 34px;
+    }
+    &-on {
+      background-color: #FF00FF;
+      border: solid 4px #B508B5;
+      box-shadow: 0 0 20px #FF00FF;
+      @media screen and (min-width: 600px) {
+        border: solid 11px #B508B5;
+        box-shadow: 0 0 50px #FF00FF;
+      }
+    }
+    &-line {
+      background-color: wheat;
+    }
+  }
+}
