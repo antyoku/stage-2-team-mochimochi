@@ -43,28 +43,24 @@
       width: 920px;
     }
     & div:nth-child(8n+1) {
-      background-color: red;
       margin-left: 0;
       @media screen and (min-width: 600px) {
         margin-left: 20px;
       }
     }
     & div:nth-child(10n+1) {
-      background-color: green;
       margin-left: 4;
       @media screen and (min-width: 600px) {
         margin-left: 0px;
       }
     }
     & div:nth-child(8n+8) {
-      background-color: blue;
       margin-right: 0;
       @media screen and (min-width: 600px) {
         margin-right: 20px;
       }
     }
     & div:nth-child(10n+10) {
-      background-color: yellow;
       margin-right: 4;
       @media screen and (min-width: 600px) {
         margin-right: 0px;
@@ -85,7 +81,7 @@
       height: 34px;
       width: 34px;
     }
-    &-on {
+    &--on {
       background-color: #FF00FF;
       border: solid 4px #B508B5;
       box-shadow: 0 0 20px #FF00FF;
@@ -93,9 +89,6 @@
         border: solid 11px #B508B5;
         box-shadow: 0 0 50px #FF00FF;
       }
-    }
-    &-line {
-      background-color: wheat;
     }
   }
 }
