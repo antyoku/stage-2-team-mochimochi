@@ -1,1 +1,73 @@
-//output-profile
+.output-profile {
+  display: none;
+  &__age-box {
+    text-align: center;
+  }
+  &__age   {
+    text-align: center;
+    color: #DDD;
+    font-size: 60px;
+    text-shadow: 0 0 16px #FFF;
+    @media screen and (min-width: 600px) {
+      font-size: 140px;
+    }
+    &--male::after {
+      content: "/ 80";
+      color: #707070;
+      font-size: 20px;
+      text-shadow: none;
+      margin-right: -30px;
+      @media screen and (min-width: 600px) {
+        font-size: 40px;
+        margin-right: -60px;
+      }
+    }
+    &--female::after {
+      content: "/ 87";
+      color: #707070;
+      font-size: 20px;
+      text-shadow: none;
+      margin-right: -30px;
+      @media screen and (min-width: 600px) {
+        font-size: 40px;
+        margin-right: -60px;
+      }
+    }
+  }
+  &__light-box {
+    text-align: center;
+    font-size: 0;
+    margin:0 auto;
+    padding-top: 30px;
+    width: 280px;
+    @media screen and (min-width: 600px) {
+      padding-top: 66px;
+      width: 80vw;
+      max-width: 960px;
+    }
+  }
+  &__light {
+    background-color: #242424;
+    border: solid 4px #4B474B;
+    border-radius: 50%;
+    display:inline-block;
+    margin: 4px;
+    height: 20px;
+    width: 20px;
+    @media screen and (min-width: 600px) {
+      border: solid 11px #4B474B;
+      margin: 10px 20px;
+      height: 34px;
+      width: 34px;
+    }
+    &--on {
+      transition: background-color 1000ms, border-color 1000ms, box-shadow 1000ms;
+      background-color: #FF00FF;
+      border-color: #B508B5;
+      box-shadow: 0 0 20px #FF00FF;
+      @media screen and (min-width: 600px) {
+        box-shadow: 0 0 50px #FF00FF;
+      }
+    }
+  }
+}
