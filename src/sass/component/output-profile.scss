@@ -61,12 +61,11 @@
       width: 34px;
     }
     &--on {
-      transition: background-color 1000ms, border 1000ms, box-shadow 1000ms;
+      transition: background-color 1000ms, border-color 1000ms, box-shadow 1000ms;
       background-color: #FF00FF;
-      border: solid 4px #B508B5;
+      border-color: #B508B5;
       box-shadow: 0 0 20px #FF00FF;
       @media screen and (min-width: 600px) {
-        border: solid 11px #B508B5;
         box-shadow: 0 0 50px #FF00FF;
       }
     }
