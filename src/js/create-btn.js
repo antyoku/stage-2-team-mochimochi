@@ -8,9 +8,10 @@ $('#js-create').on('click', function () {
   month = $('.profile__birth-month').val()
   day = $('.profile__birth-day').val()
   sex = (function () {
-    if ($('#male').val() === 'on') {
+    var sexCheck = $("label[for='"+$("input:radio[name='sex']:checked").attr("id")+"']").text();
+    if (sexCheck === '♂') {
       return 'male'
-    } else if ($('#female').val() === 'on') {
+    } else if (sexCheck === '♀') {
       return 'female'
     } else {
       return null
