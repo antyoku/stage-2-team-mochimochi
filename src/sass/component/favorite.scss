@@ -9,6 +9,12 @@
       height:666px;
     }
   }
+  &__movie-area {
+    display: none;
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
   &__thumbnail-img {
     display: none;
     position: absolute;
@@ -21,14 +27,31 @@
     margin: auto;
     filter: brightness(20%);
   }
-  .heading {
+  &__container {
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0px;
+    position: relative;
+  }
+  &__movie {
     position: absolute;
+    width: 65%;
+    height: 65%;
+    top: 0;
     right: 0;
     left: 0;
-    top: 29.9px;
     bottom: 0;
-    @media screen and (min-width: 600px) {
-      top:102px;
-    }
+    margin: auto;
+  }
+}
+
+.heading--favorite {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 29.9px;
+  bottom: 0;
+  @media screen and (min-width: 600px) {
+    top:102px;
   }
 }
