@@ -53,7 +53,6 @@
     margin: 4px;
     height: 20px;
     width: 20px;
-    transition: all, 1000ms, ease;
     @media screen and (min-width: 600px) {
       border: solid 11px #4B474B;
       margin: 10px 20px;
@@ -61,6 +60,7 @@
       width: 34px;
     }
     &--on {
+      transition: background-color 1000ms, border 1000ms, box-shadow 1000ms;
       background-color: #FF00FF;
       border: solid 4px #B508B5;
       box-shadow: 0 0 20px #FF00FF;
