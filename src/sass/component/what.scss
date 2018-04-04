@@ -1,22 +1,31 @@
 //what
 .what {
-  &__input-container {
+  &__length-container {
     padding: 0 45px;
   }
-  &__input-length {
-    //レイアウト
+  &__length {
+    // レイアウト
     max-width: 720px;
-    box-sizing: border-box;
     margin: 0 auto;
-    //デザイン
+    // デザイン
     text-align: right;
     font-size: 12px;
     line-height: 1.5;
     color: #707070;
   }
+  &__output {
+    display: none;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #707070;
+    @media screen and (min-width: 600px) {
+      font-size: 30px;
+    }
+  }
 }
 
-.heading {
+.input {
   &--what {
     margin-bottom: 8px;
   }
