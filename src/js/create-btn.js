@@ -8,7 +8,7 @@ $('#js-create').on('click', function () {
   month = $('.profile__birth-month').val()
   day = $('.profile__birth-day').val()
   sex = (function () {
-    var sexCheck = $('input:radio[name="sex"]:checked').attr('id');
+    var sexCheck = $('input:radio[name="sex"]:checked').attr('id')
     if (sexCheck === 'male') {
       return 'male'
     } else if (sexCheck === 'female') {
@@ -29,4 +29,4 @@ $('#js-create').on('click', function () {
   } else {
     window.alert('未入力の項目があります。')
   }
-});
+})
