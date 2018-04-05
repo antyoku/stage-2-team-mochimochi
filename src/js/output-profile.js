@@ -30,7 +30,7 @@ function outputProfile (bDay, gender) {
     $ageText.addClass(ageFemaleClass)
   } else if (gender === 'male') {
     maxAge = config.lifeSpanMale
-    for (var i = config.lifeSpanMale + 1; i <= config.lifeSpanFemale; i++) {
+    for (var i = config.lifeSpanMale; i <= config.lifeSpanFemale; i++) {
       $lights.eq(i).hide()
     }
   }
