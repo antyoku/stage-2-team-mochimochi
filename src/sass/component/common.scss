@@ -4,39 +4,58 @@ body {
   font-weight: 100;
 }
 
-.hero{
-  margin-bottom: 20px;
-  @media screen and (min-width: 600px) {
-    margin-bottom: 80px;
-  }
-}
-.profile{
+.profile {
+  margin-top: 20px;
   margin-bottom: 41px;
   @media screen and (min-width: 600px) {
+    margin-top: 80px;
     margin-bottom: 80px;
   }
 }
-.what{
-  margin-bottom: 53px;
+
+.output-profile {
+  margin-bottom: 58px;
   @media screen and (min-width: 600px) {
-    margin-bottom: 94px;
+    margin-bottom: 151px;
   }
 }
-.favorite{
+
+.what {
+  &__length-container {
+    margin-bottom: 53px;
+    @media screen and (min-width: 600px) {
+      margin-bottom: 94px;
+    }
+  }
+  &__output{
+    margin-bottom: 34px;
+    @media screen and (min-width: 600px) {
+      margin-bottom: 180px;
+    }
+  }
+}
+
+.favorite {
   margin-bottom: 30px;
   @media screen and (min-width: 600px) {
     margin-bottom: 80px;
   }
 }
-.create-btn{
+
+.create-btn {
   margin-bottom: 80px;
   @media screen and (min-width: 600px) {
     margin-bottom: 160px;
   }
 }
-.copyright{
-  margin-bottom: 29px;
+
+.tweet {
+  margin-bottom: 36px;
   @media screen and (min-width: 600px) {
-    margin-bottom: 31px;
+    margin-bottom: 144px;
   }
+}
+
+.copyright {
+  margin-bottom: 30px;
 }
