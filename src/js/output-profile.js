@@ -15,11 +15,15 @@ function outputProfile (bDay, gender) {
   // ------年齢を算出、年齢を表示
   var age
   var bDaySplit = bDay.split('-')
-  var birthDate = new Date(bDaySplit[0], bDaySplit[1], bDaySplit[2])
+  var birthDate = new Date(bDaySplit[0], bDaySplit[1] - 1, bDaySplit[2])
   var today = new Date()
   age = today.getFullYear() - birthDate.getFullYear()
-  if (today < new Date(today.getFullYear(), birthDate.getMonth(), birthDate.getDay())) {
+  if (today < new Date(today.getFullYear(), bDaySplit[1] - 1, bDaySplit[2])) {
     age--
+  }
+  // 年齢がマイナスなら0に
+  if (age < 0) {
+    age = 0
   }
   $ageText.text(age)
 
@@ -45,8 +49,10 @@ function outputProfile (bDay, gender) {
   var isActive = false // アクティブ状態切り替え用
 
   // setTimer()を読み込み時に一度だけ実行,スクロールごとにも実行
-  setTimer()
-  $(window).on('scroll', setTimer)
+  if (age > 0) {
+    setTimer()
+    $(window).on('scroll', setTimer)
+  }
 
   function setTimer () {
     if (!(isActive)) {
