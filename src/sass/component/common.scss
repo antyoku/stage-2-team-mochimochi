@@ -3,6 +3,10 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 100;
 }
+input, select, option {
+  font-family: inherit;
+  font-weight: inherit;
+}
 
 .profile {
   margin-top: 20px;
