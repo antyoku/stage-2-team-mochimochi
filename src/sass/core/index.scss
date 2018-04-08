@@ -1,25 +1,19 @@
 @charset "utf-8";
-
-@import "../component/reset";
-
-@import "../component/common";
-
-@import "../component/hero";
-
-@import "../component/profile";
-
-@import "../component/output-profile";
-
-@import "../component/heading";
-
-@import "../component/what";
-
-@import "../component/where";
-
-@import "../component/favorite";
-
-@import "../component/create-btn";
-
-@import "../component/tweet";
-
-@import "../component/footer";
+$breakpoint: 600px;
+@mixin screen-min($min-width) {
+  @media screen and (min-width: $min-width) {
+    @content;
+  }
+}
+@import "../component/_reset";
+@import "../component/_common";
+@import "../component/_hero";
+@import "../component/_profile";
+@import "../component/_output-profile";
+@import "../component/_heading";
+@import "../component/_what";
+@import "../component/_where";
+@import "../component/_favorite";
+@import "../component/_create-btn";
+@import "../component/_tweet";
+@import "../component/_footer";
