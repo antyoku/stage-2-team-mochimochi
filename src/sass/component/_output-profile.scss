@@ -8,7 +8,7 @@
     color: #DDD;
     font-size: 60px;
     text-shadow: 0 0 16px #FFF;
-    @media screen and (min-width: 600px) {
+    @include screen-min($breakpoint){
       font-size: 140px;
     }
     &--male::after {
@@ -17,7 +17,7 @@
       font-size: 20px;
       text-shadow: none;
       margin-right: -30px;
-      @media screen and (min-width: 600px) {
+      @include screen-min($breakpoint){
         font-size: 40px;
         margin-right: -60px;
       }
@@ -28,7 +28,7 @@
       font-size: 20px;
       text-shadow: none;
       margin-right: -30px;
-      @media screen and (min-width: 600px) {
+      @include screen-min($breakpoint){
         font-size: 40px;
         margin-right: -60px;
       }
@@ -40,7 +40,7 @@
     margin:0 auto;
     padding-top: 30px;
     width: 280px;
-    @media screen and (min-width: 600px) {
+    @include screen-min($breakpoint){
       padding-top: 66px;
       width: 80vw;
       max-width: 960px;
@@ -54,18 +54,18 @@
     margin: 4px;
     height: 20px;
     width: 20px;
-    @media screen and (min-width: 600px) {
+    @include screen-min($breakpoint){
       border: solid 11px #4B474B;
       margin: 10px 20px;
       height: 34px;
       width: 34px;
     }
     &--on {
-      transition: background-color 1000ms, border-color 1000ms, box-shadow 1000ms;
+      transition: background-color 1s, border-color 1s, box-shadow 1s;
       background-color: #FF00FF;
       border-color: #B508B5;
       box-shadow: 0 0 20px #FF00FF;
-      @media screen and (min-width: 600px) {
+      @include screen-min($breakpoint){
         box-shadow: 0 0 50px #FF00FF;
       }
     }
