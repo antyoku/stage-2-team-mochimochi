@@ -28,10 +28,10 @@
     position: absolute;
     right: 0;
     left: 0;
-    top: 29.9px;
+    top: 30px;
     bottom: 0;
     @include screen-min($breakpoint) {
-      top:102px;
+      top:100px;
     }
   }
 }

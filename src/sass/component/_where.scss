@@ -3,7 +3,7 @@
   position: relative;
   &__map {
     width: 100%;
-    height: 202.9px;
+    height: 200px;
     @include screen-min($breakpoint) {
       height:480px;
     }
