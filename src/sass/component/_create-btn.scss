@@ -15,7 +15,7 @@
     padding: 25px;
     text-align: center;
     cursor: pointer;
-     @include screen-min($breakpoint) {
+    @include screen-min($breakpoint) {
       font-size: 30px;
       padding: 33px;
     }
