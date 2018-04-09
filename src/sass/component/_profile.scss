@@ -1,7 +1,7 @@
 .profile {
   border-bottom: solid 5px #111;
   padding-bottom: 140px;
-  @media screen and (min-width: 600px) {
+  @include screen-min($breakpoint){
     padding-bottom: 155px;
   }
   &__input {
@@ -11,7 +11,7 @@
     margin: 0 auto;
     padding-top: 20px;
     text-align: center;
-    @media screen and (min-width: 600px) {
+    @include screen-min($breakpoint){
       padding-top: 80px;
     }
   }
@@ -51,7 +51,7 @@
       z-index: 1;
       top: 127px;
       left: 60px;
-      @media screen and (min-width: 600px) {
+      @include screen-min($breakpoint){
         top: 195px;
       }
     }
@@ -60,7 +60,7 @@
       z-index: 1;
       top: 127px;
       left: 165px;
-      @media screen and (min-width: 600px) {
+      @include screen-min($breakpoint){
         top: 195px;
       }
     }
@@ -72,7 +72,7 @@
       cursor: default;
       width: 0;
       height: 140px;
-      @media screen and (min-width: 600px) {
+      @include screen-min($breakpoint){
         height: 155px;
       }
       &::after {
@@ -82,7 +82,7 @@
         transform: rotate(90deg);
         height: 140px;
         width: 5px;
-        @media screen and (min-width: 600px) {
+        @include screen-min($breakpoint){
           height: 140px;
           margin-top: 7.5px;
         }
