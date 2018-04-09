@@ -4,16 +4,16 @@
     var urlFav = $('#fav-input-id').val()
     var output = $('#output')
     if (urlFav.match('watch')) {
-      var idWatch = urlFav.split(/.*v=([\d|\w\-]+).*/)
-      output.innerHTML = "<img class=\"favorite__thumbnail-img\" src='https://img.youtube.com/vi/" + idWatch[1] + "/sddefault.jpg' alt=\"\">"
+      var idWatch = urlFav.split(/.*v=([\d\w-]+).*/)
+      output.html("<img class=\"favorite__thumbnail-img\" src='https://img.youtube.com/vi/" + idWatch[1] + "/sddefault.jpg' alt=\"\">")
       $('.favorite__thumbnail-img').fadeIn()
     } else if (urlFav.match(/youtu.be/)) {
-      var idTube = urlFav.split(/.*\.be\/([\d\w\-]+).*/)
-      output.innerHTML = "<img class=\"favorite__thumbnail-img\" src='https://img.youtube.com/vi/" + idTube[1] + "/default.jpg' alt=\"\">"
+      var idTube = urlFav.split(/.*.be\/([\d\w-]+).*/)
+      output.html("<img class=\"favorite__thumbnail-img\" src='https://img.youtube.com/vi/" + idTube[1] + "/default.jpg' alt=\"\">")
       $('.favorite__thumbnail-img').fadeIn()
     } else if (urlFav.match(/embed/)) {
-      var idEmbed = urlFav.split(/.*\embed\/([\d\w\-]+).*/)
-      output.innerHTML = "<img class=\"favorite__thumbnail-img\" src='https://img.youtube.com/vi/" + idEmbed[1] + "/default.jpg' alt=\"\">"
+      var idEmbed = urlFav.split(/.*embed\/([\d\w-]+).*/)
+      output.html("<img class=\"favorite__thumbnail-img\" src='https://img.youtube.com/vi/" + idEmbed[1] + "/default.jpg' alt=\"\">")
       $('.favorite__thumbnail-img').fadeIn()
     } else {
       $('.favorite__thumbnail-img').remove()
