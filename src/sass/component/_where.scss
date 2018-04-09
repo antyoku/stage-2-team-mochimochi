@@ -3,20 +3,9 @@
   position: relative;
   &__map {
     width: 100%;
-    height: 202.9px;
-    @media screen and (min-width: 600px) {
+    height: 200px;
+    @include screen-min($breakpoint) {
       height:480px;
     }
-  }
-}
-
-.heading--where {
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 29.9px;
-  bottom: 0;
-  @media screen and (min-width: 600px) {
-    top:102px;
   }
 }
