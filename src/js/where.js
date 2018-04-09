@@ -1,6 +1,8 @@
-'use strict'
+/* global google */
+/* global $ */
 
-var styleOptions = [{
+(function () {
+  var styleOptions = [{
     'elementType': 'geometry',
     'stylers': [{
       'color': '#212121'
@@ -34,11 +36,11 @@ var styleOptions = [{
     'featureType': 'administrative',
     'elementType': 'geometry',
     'stylers': [{
-        'color': '#757575'
-      },
-      {
-        'visibility': 'off'
-      }
+      'color': '#757575'
+    },
+    {
+      'visibility': 'off'
+    }
     ]
   },
   {
@@ -183,55 +185,56 @@ var styleOptions = [{
       'color': '#3d3d3d'
     }]
   }
-]
+  ]
 
-function initMap() {
-  var map = new google.maps.Map(document.getElementById('map-area'), {
-    center: new google.maps.LatLng(35.65858, 139.745433),
-    zoom: 4,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    disableDefaultUI: true,
-    scrollwheel: false,
-    draggable: false
-  });
-  map.setOptions({
-    styles: styleOptions
-  });
-}
-
-var getMap = (function () {
-  function codeAddress(address) {
-    var geocoder = new google.maps.Geocoder();
-    geocoder.geocode({
-      'address': address
-    }, function (results, status) {
-      if (status == google.maps.GeocoderStatus.OK) {
-        var map = new google.maps.Map(document.getElementById('map-area'), {
-          zoom: 8,
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
-          disableDefaultUI: true,
-          scrollwheel: false,
-          draggable: false
-        });
-        map.setCenter(results[0].geometry.location);
-        map.setOptions({
-          styles: styleOptions
-        });
-      } else {
-        console.log('Geocode was not successful for the following reason: ' + status);
-      }
-    });
+  function initMap () {
+    var map = new google.maps.Map(document.getElementById('map-area'), {
+      center: new google.maps.LatLng(35.65858, 139.745433),
+      zoom: 4,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      disableDefaultUI: true,
+      scrollwheel: false,
+      draggable: false
+    })
+    map.setOptions({
+      styles: styleOptions
+    })
   }
 
-  return {
-    getAddress: function () {
-      $('#where-input-id').change(function () {
-        var address = document.getElementById('where-input-id').value;
-        codeAddress(address);
-      });
+  var getMap = (function () {
+    function codeAddress (address) {
+      var geocoder = new google.maps.Geocoder()
+      geocoder.geocode({
+        'address': address
+      }, function (results, status) {
+        if (status === google.maps.GeocoderStatus.OK) {
+          var map = new google.maps.Map(document.getElementById('map-area'), {
+            zoom: 8,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            disableDefaultUI: true,
+            scrollwheel: false,
+            draggable: false
+          })
+          map.setCenter(results[0].geometry.location)
+          map.setOptions({
+            styles: styleOptions
+          })
+        } else {
+          console.log('Geocode was not successful for the following reason: ' + status)
+        }
+      })
     }
-  }
-})();
 
-google.maps.event.addDomListener(window, 'load', initMap);
-getMap.getAddress();
+    return {
+      getAddress: function () {
+        $('#where-input-id').change(function () {
+          var address = document.getElementById('where-input-id').value
+          codeAddress(address)
+        })
+      }
+    }
+  })()
+
+  google.maps.event.addDomListener(window, 'load', initMap)
+  getMap.getAddress()
+})()
