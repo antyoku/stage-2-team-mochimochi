@@ -9,14 +9,7 @@
     month = $('.profile__birth-month').val()
     day = $('.profile__birth-day').val()
     sex = (function () {
-      var sexCheck = $('input:radio[name="sex"]:checked').attr('id')
-      if (sexCheck === 'male') {
-        return 'male'
-      } else if (sexCheck === 'female') {
-        return 'female'
-      } else {
-        return null
-      }
+      return $('input:radio[name="sex"]:checked').attr('id')
     })()
     what = encodeURIComponent($('#js-input-what').val())
     where = $('#where-input-id').val()
@@ -45,5 +38,4 @@
       }
     }
   });
-
-})()
+})();
