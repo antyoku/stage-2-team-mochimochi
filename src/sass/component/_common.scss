@@ -10,30 +10,30 @@ input, select, option {
 
 .profile {
   margin-top: 20px;
-  margin-bottom: 41px;
-  @media screen and (min-width: 600px) {
+  margin-bottom: 40px;
+  @include screen-min($breakpoint) {
     margin-top: 80px;
     margin-bottom: 80px;
   }
 }
 
 .output-profile {
-  margin-bottom: 58px;
-  @media screen and (min-width: 600px) {
-    margin-bottom: 151px;
+  margin-bottom: 60px;
+  @include screen-min($breakpoint) {
+    margin-bottom: 150px;
   }
 }
 
 .what {
   &__length-container {
-    margin-bottom: 53px;
-    @media screen and (min-width: 600px) {
-      margin-bottom: 94px;
+    margin-bottom: 55px;
+    @include screen-min($breakpoint) {
+      margin-bottom: 95px;
     }
   }
   &__output{
-    margin-bottom: 34px;
-    @media screen and (min-width: 600px) {
+    margin-bottom: 35px;
+    @include screen-min($breakpoint) {
       margin-bottom: 180px;
     }
   }
@@ -41,22 +41,22 @@ input, select, option {
 
 .favorite {
   margin-bottom: 30px;
-  @media screen and (min-width: 600px) {
+  @include screen-min($breakpoint) {
     margin-bottom: 80px;
   }
 }
 
 .create-btn {
   margin-bottom: 80px;
-  @media screen and (min-width: 600px) {
+  @include screen-min($breakpoint) {
     margin-bottom: 160px;
   }
 }
 
 .tweet {
-  margin-bottom: 36px;
-  @media screen and (min-width: 600px) {
-    margin-bottom: 144px;
+  margin-bottom: 35px;
+  @include screen-min($breakpoint) {
+    margin-bottom: 145px;
   }
 }
 
