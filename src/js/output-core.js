@@ -1,4 +1,4 @@
-/* global $ */
+/* global $ outputProfile outputWhat outputWhere outputFavorite */
 (function () {
   // -----パラメータを['AAA=XXX', 'BBB=YYY',...]の状態に分割
   var paramSplit = window.location.search.split('&')
@@ -23,6 +23,6 @@
     $(window).on('load', function () {
       outputWhere(paramObj.city)
     })
-    outputTweet()
+    $('.tweet').show()
   }
-})()
+})();
