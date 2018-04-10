@@ -1,18 +1,3 @@
-//開発中のソースは
-//ejsは「src/ejs/core/」または「src/ejs/component/」
-//sassは「src/sass/core/」または「src/sass/component/」
-//jsは「src/js/」内
-//画像は「src/image/」内
-//に保存すること
-
-//「gulp」実行で
-//ブラウザが立ち上がります
-//ejs,sass,js,imageの変更を監視し、適宜変換し、docsに格納します
-//docsを変更を監視し、ブラウザをリロードします
-
-//「gulp reloadDocs」実行で
-//強制的にejs,sass,js,imageをdocsに格納します
-
 var gulp = require('gulp'),
   watch = require('gulp-watch'),
   sass = require('gulp-sass'),
