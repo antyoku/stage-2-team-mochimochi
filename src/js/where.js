@@ -237,4 +237,9 @@
 
   google.maps.event.addDomListener(window, 'load', initMap)
   getMap.getAddress()
+  $(window).on('load', function () {
+    setTimeout(function () {
+      $('.where__loading').fadeOut()
+    }, 1000)
+  })
 })();

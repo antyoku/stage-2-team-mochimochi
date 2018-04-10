@@ -5,7 +5,17 @@
     width: 100%;
     height: 200px;
     @include screen-min($breakpoint) {
-      height:480px;
+      height: 480px;
+    }
+  }
+  &__loading {
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    width: 100%;
+    height: 200px;
+    @include screen-min($breakpoint) {
+      height: 480px;
     }
   }
 }
