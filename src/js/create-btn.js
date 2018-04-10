@@ -15,11 +15,7 @@
     where = $('#where-input-id').val()
     favorite = encodeURIComponent($('#fav-input-id').val())
 
-    if ($('.favorite__thumbnail-img')[0]) {
-      isYoutube = true
-    } else {
-      isYoutube = false
-    }
+    isYoutube = $('.favorite__thumbnail-img')[0]
 
     // 全て入力しているか判定
     if (year && month && day && sex && what && where && favorite) {
