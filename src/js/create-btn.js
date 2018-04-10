@@ -1,27 +1,24 @@
 /* global $ */
 (function () {
   $('#js-create').on('click', function () {
-    var year, month, day, sex, what, where, favorite,
-      param, isYoutube
-
     // inputの値を変数に格納
-    year = $('.profile__birth-year').val()
-    month = $('.profile__birth-month').val()
-    day = $('.profile__birth-day').val()
-    sex = (function () {
+    var year = $('.profile__birth-year').val()
+    var month = $('.profile__birth-month').val()
+    var day = $('.profile__birth-day').val()
+    var sex = (function () {
       return $('input:radio[name="sex"]:checked').attr('id')
     })()
-    what = encodeURIComponent($('#js-input-what').val())
-    where = $('#where-input-id').val()
-    favorite = encodeURIComponent($('#fav-input-id').val())
+    var what = encodeURIComponent($('#js-input-what').val())
+    var where = $('#where-input-id').val()
+    var favorite = encodeURIComponent($('#fav-input-id').val())
 
-    isYoutube = $('.favorite__thumbnail-img')[0]
+    var isYoutube = $('.favorite__thumbnail-img')[0]
 
     // 全て入力しているか判定
     if (year && month && day && sex && what && where && favorite) {
       if (isYoutube) {
         // URL+パラメータに移動
-        param = '?bday=' + year + '-' + month + '-' + day + '&gender=' + sex + '&city=' + where + '&youtube=' + favorite + '&wau=' + what
+        var param = '?bday=' + year + '-' + month + '-' + day + '&gender=' + sex + '&city=' + where + '&youtube=' + favorite + '&wau=' + what
         window.location.href = window.location.href.slice(0, window.location.search.length * -1) + param
       } else {
         window.alert('「What is your favorite movie?」にはYouTube動画のURLを入力してください。')
@@ -33,5 +30,5 @@
         window.alert('未入力の項目があります。\n\n「What is your favorite movie?」にはYouTube動画のURLを入力してください。')
       }
     }
-  });
+  })
 })();
