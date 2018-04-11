@@ -28,7 +28,7 @@ function outputWhere (outputAddress) {
         new google.maps.Point(markerWidth / 2, markerHeight),
         new google.maps.Size(markerWidth, markerHeight)
       )
-      var marker = new google.maps.Marker({
+      var marker = new google.maps.Marker({ // eslint-disable-line no-unused-vars
         map: map,
         position: results[0].geometry.location,
         icon: markerImg
