@@ -194,10 +194,10 @@
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       disableDefaultUI: true,
       scrollwheel: false,
-      draggable: false
+      draggable: false,
+      draggableCursor: 'default'
     })
     map.setOptions({
-      draggableCursor: 'default',
       styles: styleOptions
     })
   }
@@ -214,11 +214,11 @@
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             disableDefaultUI: true,
             scrollwheel: false,
-            draggable: false
+            draggable: false,
+            draggableCursor: 'default'
           })
           map.setCenter(results[0].geometry.location)
           map.setOptions({
-            draggableCursor: 'default',
             styles: styleOptions
           })
         } else {

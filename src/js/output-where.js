@@ -12,7 +12,8 @@ function outputWhere (outputAddress) {
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         disableDefaultUI: true,
         scrollwheel: false,
-        draggable: false
+        draggable: false,
+        draggableCursor: 'default'
       })
       map.setCenter(results[0].geometry.location)
       var markerWidth = 45
@@ -219,7 +220,6 @@ function outputWhere (outputAddress) {
       }
       ]
       map.setOptions({
-        draggableCursor: 'default',
         styles: styleOptions
       })
       $('.heading--where').hide()
