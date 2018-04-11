@@ -15,7 +15,7 @@
     var isYoutube = $('.favorite__thumbnail-img')[0]
 
     // 全て入力しているか判定
-    if (year && month && day && sex && what && where && favorite) {
+    if (year && month && day && sex && what && where && where !== '　' && favorite) {
       if (isYoutube) {
         // URL+パラメータに移動
         var param = '?bday=' + year + '-' + month + '-' + day + '&gender=' + sex + '&city=' + where + '&youtube=' + favorite + '&wau=' + what
