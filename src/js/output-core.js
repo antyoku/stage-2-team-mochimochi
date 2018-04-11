@@ -1,4 +1,4 @@
-/* global $ outputProfile outputWhat outputWhere outputFavorite */
+/* global $ */
 (function () {
   // -----パラメータを['AAA=XXX', 'BBB=YYY',...]の状態に分割
   var paramSplit = window.location.search.split('&')
@@ -25,4 +25,4 @@
     })
     $('.tweet').show()
   }
-})();
+})()
