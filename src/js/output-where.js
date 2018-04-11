@@ -31,7 +31,8 @@ function outputWhere (outputAddress) {
       var marker = new google.maps.Marker({ // eslint-disable-line no-unused-vars
         map: map,
         position: results[0].geometry.location,
-        icon: markerImg
+        icon: markerImg,
+        clickable: false
       })
       var styleOptions = [{
         'elementType': 'geometry',
@@ -218,6 +219,7 @@ function outputWhere (outputAddress) {
       }
       ]
       map.setOptions({
+        draggableCursor: 'default',
         styles: styleOptions
       })
       $('.heading--where').hide()

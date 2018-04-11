@@ -197,6 +197,7 @@
       draggable: false
     })
     map.setOptions({
+      draggableCursor: 'default',
       styles: styleOptions
     })
   }
@@ -217,6 +218,7 @@
           })
           map.setCenter(results[0].geometry.location)
           map.setOptions({
+            draggableCursor: 'default',
             styles: styleOptions
           })
         } else {
