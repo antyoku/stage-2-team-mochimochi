@@ -13,7 +13,7 @@
 <body>
   <!-- head -->
 <div class="hero">
-  <img class="hero__img" src="../image/hero.jpg" alt="">
+  <img class="hero__img" src="image/hero.jpg" alt="">
 </div>
 
   <div class="profile">
@@ -272,11 +272,12 @@
 
   <div class="where">
   <div class="where__map" id="map-area"></div>
+  <div class="where__loading"></div>
   <div class="heading heading--where">
     <div class="heading__english">Where are you inhabiting?</div>
     <div class="heading__japanese">どこに生息している？</div>
     <select class="input input--small" id="where-input-id">
-      <option></option>
+      <option>　</option>
       <option>Hokkaido</option>
       <option>Aomori</option>
       <option>Iwate</option>
@@ -328,13 +329,14 @@
   </div>
 </div>
 
+
   <div class="favorite">
   <div class="favorite__thumbnail-area" id="output"></div>
   <div class="favorite__movie-area" id="outputMovie"></div>
   <div class="heading heading--favorite">
     <div class="heading__english">What is your favorite movie?</div>
     <div class="heading__japanese">好きな動画は？</div>
-    <input class="input input--small focus" id="fav-input-id" type="text" value="https://www.youtube.com/～">
+    <input class="input input--small favorite-btn--focus" id="fav-input-id" type="text" value="https://www.youtube.com/～">
   </div>
 </div>
 

@@ -97,26 +97,26 @@ input, select, option {
 
 .profile {
   margin-top: 20px;
-  margin-bottom: 41px; }
+  margin-bottom: 40px; }
   @media screen and (min-width: 600px) {
     .profile {
       margin-top: 80px;
       margin-bottom: 80px; } }
 
 .output-profile {
-  margin-bottom: 58px; }
+  margin-bottom: 60px; }
   @media screen and (min-width: 600px) {
     .output-profile {
-      margin-bottom: 151px; } }
+      margin-bottom: 150px; } }
 
 .what__length-container {
-  margin-bottom: 53px; }
+  margin-bottom: 55px; }
   @media screen and (min-width: 600px) {
     .what__length-container {
-      margin-bottom: 94px; } }
+      margin-bottom: 95px; } }
 
 .what__output {
-  margin-bottom: 34px; }
+  margin-bottom: 35px; }
   @media screen and (min-width: 600px) {
     .what__output {
       margin-bottom: 180px; } }
@@ -134,10 +134,10 @@ input, select, option {
       margin-bottom: 160px; } }
 
 .tweet {
-  margin-bottom: 36px; }
+  margin-bottom: 35px; }
   @media screen and (min-width: 600px) {
     .tweet {
-      margin-bottom: 144px; } }
+      margin-bottom: 145px; } }
 
 .copyright {
   margin-bottom: 30px; }
@@ -303,7 +303,7 @@ input, select, option {
         height: 34px;
         width: 34px; } }
     .output-profile__light--on {
-      transition: background-color 1000ms, border-color 1000ms, box-shadow 1000ms;
+      transition: background-color 600ms, border-color 600ms, box-shadow 600ms;
       background-color: #FF00FF;
       border-color: #B508B5;
       box-shadow: 0 0 20px #FF00FF; }
@@ -315,59 +315,56 @@ input, select, option {
   max-width: 100%;
   padding: 0 45px; }
   .heading__english {
-    margin-bottom: 10px; }
+    color: #707070;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: center; }
     @media screen and (min-width: 600px) {
       .heading__english {
+        font-size: 30px;
         margin-bottom: 20px; } }
   .heading__japanese {
-    margin-bottom: 30px; }
+    color: #707070;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+    text-align: center; }
     @media screen and (min-width: 600px) {
       .heading__japanese {
+        font-size: 18px;
+        line-height: 1.5;
         margin-bottom: 80px; } }
-
-.input {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 16px;
-  margin: 0 auto; }
-  @media screen and (min-width: 600px) {
-    .input {
-      padding: 30px; } }
-  .input--big {
-    max-width: 720px; }
-  .input--small {
-    max-width: 495px; }
-
-.heading__english {
-  color: #707070;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center; }
-  @media screen and (min-width: 600px) {
-    .heading__english {
-      font-size: 30px; } }
-
-.heading__japanese {
-  color: #707070;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center; }
-  @media screen and (min-width: 600px) {
-    .heading__japanese {
-      font-size: 18px;
-      line-height: 1.5; } }
+  .heading--where {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 30px;
+    bottom: 0; }
+    @media screen and (min-width: 600px) {
+      .heading--where {
+        top: 100px; } }
 
 .input {
   background-color: #111;
   border: none;
+  box-sizing: border-box;
   color: #707070;
+  display: block;
   font-size: 16px;
   line-height: 1.5;
-  text-align: center; }
+  text-align: center;
+  padding: 16px;
+  margin: 0 auto;
+  width: 100%; }
   @media screen and (min-width: 600px) {
     .input {
+      padding: 30px;
       font-size: 30px; } }
+  .input--big {
+    max-width: 720px; }
+  .input--small {
+    max-width: 495px; }
 
 .what__length-container {
   padding: 0 45px; }
@@ -397,27 +394,26 @@ input, select, option {
   position: relative; }
   .where__map {
     width: 100%;
-    height: 202.9px; }
+    height: 200px; }
     @media screen and (min-width: 600px) {
       .where__map {
         height: 480px; } }
-
-.heading--where {
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 29.9px;
-  bottom: 0; }
-  @media screen and (min-width: 600px) {
-    .heading--where {
-      top: 102px; } }
+  .where__loading {
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    width: 100%;
+    height: 200px; }
+    @media screen and (min-width: 600px) {
+      .where__loading {
+        height: 480px; } }
 
 .favorite {
   position: relative;
   text-align: center; }
   .favorite__thumbnail-area {
     width: 100%;
-    height: 203.33px; }
+    height: 200px; }
     @media screen and (min-width: 600px) {
       .favorite__thumbnail-area {
         height: 666px; } }
@@ -439,7 +435,7 @@ input, select, option {
     filter: brightness(20%); }
   .favorite__container {
     width: 100%;
-    padding-bottom: 56.25%;
+    padding-bottom: 55%;
     height: 0px;
     position: relative; }
   .favorite__movie {
@@ -451,48 +447,43 @@ input, select, option {
     left: 0;
     bottom: 0;
     margin: auto; }
+  .favorite-btn--focus {
+    color: #353535; }
 
 .heading--favorite {
   position: absolute;
   right: 0;
   left: 0;
-  top: 29.9px;
+  top: 30px;
   bottom: 0; }
   @media screen and (min-width: 600px) {
     .heading--favorite {
-      top: 102px; } }
-
-.focus {
-  color: #353535; }
+      top: 100px; } }
 
 .create-btn {
   padding: 0 45px; }
   .create-btn__switch {
+    background-color: #FF00FF;
+    border: solid #707070 1px;
+    border-radius: 3px;
     box-sizing: border-box;
+    box-shadow: #FF00FF 0 0 26px 0;
+    color: #fff;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
     max-width: 425px;
     padding: 25px;
-    margin: 0 auto; }
+    text-align: center;
+    cursor: pointer; }
     @media screen and (min-width: 600px) {
       .create-btn__switch {
+        font-size: 30px;
         padding: 33px; } }
-
-.create-btn__switch {
-  background-color: #FF00FF;
-  border: solid #707070 1px;
-  border-radius: 3px;
-  box-shadow: #FF00FF 0 0 26px 0;
-  text-align: center;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer; }
-  @media screen and (min-width: 600px) {
-    .create-btn__switch {
-      font-size: 30px; } }
-  .create-btn__switch:active {
-    transition: transform 0.1s linear 0s;
-    transform: translateY(3px); }
+    .create-btn__switch:active {
+      transition: transform 0.1s linear 0s;
+      transform: translateY(3px); }
 
 .tweet {
   display: none;
@@ -511,11 +502,7 @@ input, select, option {
 
 .copyright {
   text-align: center;
-  padding: 0 0 29px;
   font-weight: 250;
   line-height: 18px;
   color: #707070;
   font-size: 12px; }
-  @media screen and (min-width: 600px) {
-    .copyright {
-      padding: 0 0 31px; } }
