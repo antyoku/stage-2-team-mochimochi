@@ -23,19 +23,14 @@
     font-size: 24px;
     padding: 0;
     text-align: center;
-    text-indent: 20px;
     height: 60px;
     width: 90px;
   }
   &__birth-year {
     border-radius: 3px 0 0 3px;
   }
-  &__birth-month {
-    text-indent: 38px;
-  }
   &__birth-day {
     border-radius: 0 3px 3px 0;
-    text-indent: 38px;
   }
   &__sex {
     float: left;
