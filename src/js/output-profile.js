@@ -2,7 +2,7 @@
 function outputProfile (bDay, gender) {
   // -----初期設定
   var config = {
-    delay: 333, // ライトが点灯する間隔
+    delay: 250, // ライトが点灯する間隔
     lifeSpanFemale: 87, // 女性の平均寿命
     lifeSpanMale: 80 // 男性の平均寿命
   }

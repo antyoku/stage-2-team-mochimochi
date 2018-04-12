@@ -61,7 +61,7 @@
       width: 34px;
     }
     &--on {
-      transition: background-color 1s, border-color 1s, box-shadow 1s;
+      transition: background-color 600ms, border-color 600ms, box-shadow 600ms;
       background-color: #FF00FF;
       border-color: #B508B5;
       box-shadow: 0 0 20px #FF00FF;
