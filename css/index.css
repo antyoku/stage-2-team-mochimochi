@@ -422,6 +422,9 @@ select {
       .where__loading {
         height: 480px; } }
 
+.input--where {
+  text-align-last: center; }
+
 .favorite {
   position: relative;
   text-align: center; }
